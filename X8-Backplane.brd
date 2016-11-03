@@ -156,13 +156,13 @@
 <plain>
 <circle x="63.43686875" y="38.21558125" radius="73.025" width="0.4064" layer="51"/>
 <wire x1="38.29215" y1="99.28131875" x2="2.371125" y2="63.36029375" width="0.4064" layer="20"/>
-<wire x1="124.50260625" y1="13.0708625" x2="88.581584375" y2="-22.8501625" width="0.4064" layer="20"/>
-<wire x1="2.371125" y1="13.0708625" x2="38.29215" y2="-22.8501625" width="0.4064" layer="20"/>
+<wire x1="124.50260625" y1="13.0708625" x2="103.567584375" y2="-7.3561625" width="0.4064" layer="20"/>
+<wire x1="2.371125" y1="13.0708625" x2="22.29015" y2="-7.3561625" width="0.4064" layer="20"/>
 <wire x1="88.581584375" y1="99.28131875" x2="124.50260625" y2="63.36029375" width="0.4064" layer="20"/>
 <wire x1="88.581584375" y1="99.28131875" x2="38.29215" y2="99.28131875" width="0.4064" layer="20"/>
 <wire x1="124.50260625" y1="63.36029375" x2="124.50260625" y2="13.0708625" width="0.4064" layer="20"/>
-<wire x1="88.581584375" y1="-22.8501625" x2="38.29215" y2="-22.8501625" width="0.4064" layer="20"/>
 <wire x1="2.371125" y1="63.36029375" x2="2.371125" y2="13.0708625" width="0.4064" layer="20"/>
+<wire x1="22.352" y1="-7.366" x2="103.378" y2="-7.366" width="0.4064" layer="20" curve="-104.736525"/>
 </plain>
 <libraries>
 <library name="MicrocontrollerComponents">
@@ -706,12 +706,12 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </pass>
 </autorouter>
 <elements>
-<element name="PCB1" library="MicrocontrollerComponents" package="RPI2" value="RPI2" x="91.74" y="89.022" rot="MR270"/>
+<element name="PCB1" library="MicrocontrollerComponents" package="RPI2" value="RPI2" x="90.216" y="89.022" rot="MR270"/>
 <element name="U$1" library="PowerComponents" package="DPAK-3" value="SWITCHMODE_SCHOTTKY" x="104.394" y="56.642" rot="MR0"/>
 <element name="U1" library="PowerComponents" package="LM2678" value="LM2678" x="102.108" y="44.958" rot="MR180"/>
 <element name="C3" library="SparkFun-Capacitors" package="0805" value="0.47uF" x="129.286" y="72.39" rot="MR0"/>
 <element name="C4" library="SparkFun-Passives" package="0603-CAP" value="0.01uF" x="133.604" y="73.152" rot="MR0"/>
-<element name="U$2" library="DiscreteComponents" package="HCMA1305" value="15uH" x="108.204" y="31.496" rot="MR90"/>
+<element name="U$2" library="DiscreteComponents" package="HCMA1305" value="15uH" x="107.188" y="26.924" rot="MR90"/>
 <element name="C6" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="122.936" y="36.83" rot="MR0"/>
 <element name="C9" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="119.888" y="83.312" rot="MR0"/>
 <element name="C10" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="104.14" y="77.47" rot="MR0"/>
@@ -719,7 +719,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="C12" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="104.14" y="71.628" rot="MR0"/>
 <element name="C13" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="119.888" y="71.628" rot="MR0"/>
 <element name="C2" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="116.84" y="54.864" rot="MR180"/>
-<element name="U$3" library="Other" package="BNO055" value="BNO055_9DOF_BREAKOUT" x="112.776" y="22.098"/>
+<element name="U$3" library="Other" package="BNO055" value="BNO055_9DOF_BREAKOUT" x="19.812" y="21.082" rot="R270"/>
 </elements>
 <signals>
 <signal name="N$11">
@@ -737,7 +737,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$2" pad="P$1"/>
 <contactref element="U$1" pad="P$4"/>
 <wire x1="110.4392" y1="48.768" x2="107.494" y2="56.642" width="0" layer="19" extent="1-1"/>
-<wire x1="113.704" y1="31.496" x2="110.4392" y2="48.768" width="0" layer="19" extent="1-1"/>
+<wire x1="112.688" y1="26.924" x2="110.4392" y2="48.768" width="0" layer="19" extent="1-1"/>
 <wire x1="132.754" y1="73.152" x2="107.494" y2="56.642" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
@@ -787,7 +787,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="126.156" y1="36.83" x2="107.36" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="123.108" y1="83.312" x2="126.156" y2="36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="110.4392" y1="42.418" x2="123.108" y2="83.312" width="0" layer="19" extent="1-1"/>
-<wire x1="102.704" y1="31.496" x2="110.4392" y2="42.418" width="0" layer="19" extent="1-1"/>
+<wire x1="101.688" y1="26.924" x2="110.4392" y2="42.418" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="PCB1" pad="P$1"/>
