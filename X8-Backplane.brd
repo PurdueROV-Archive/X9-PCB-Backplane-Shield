@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -707,18 +707,18 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </autorouter>
 <elements>
 <element name="PCB1" library="MicrocontrollerComponents" package="RPI2" value="RPI2" x="90.216" y="89.022" rot="MR270"/>
-<element name="U$1" library="PowerComponents" package="DPAK-3" value="SWITCHMODE_SCHOTTKY" x="104.394" y="56.642" rot="MR0"/>
-<element name="U1" library="PowerComponents" package="LM2678" value="LM2678" x="102.108" y="44.958" rot="MR180"/>
-<element name="C3" library="SparkFun-Capacitors" package="0805" value="0.47uF" x="129.286" y="72.39" rot="MR0"/>
-<element name="C4" library="SparkFun-Passives" package="0603-CAP" value="0.01uF" x="133.604" y="73.152" rot="MR0"/>
-<element name="U$2" library="DiscreteComponents" package="HCMA1305" value="15uH" x="107.188" y="26.924" rot="MR90"/>
-<element name="C6" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="122.936" y="36.83" rot="MR0"/>
-<element name="C9" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="119.888" y="83.312" rot="MR0"/>
-<element name="C10" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="104.14" y="77.47" rot="MR0"/>
-<element name="C11" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="119.888" y="77.47" rot="MR0"/>
-<element name="C12" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="104.14" y="71.628" rot="MR0"/>
-<element name="C13" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="119.888" y="71.628" rot="MR0"/>
-<element name="C2" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="116.84" y="54.864" rot="MR180"/>
+<element name="U$1" library="PowerComponents" package="DPAK-3" value="SWITCHMODE_SCHOTTKY" x="87.884" y="42.926" rot="MR270"/>
+<element name="U1" library="PowerComponents" package="LM2678" value="LM2678" x="101.346" y="38.608" rot="MR270"/>
+<element name="C3" library="SparkFun-Capacitors" package="0805" value="0.47uF" x="109.22" y="49.022" rot="MR270"/>
+<element name="C4" library="SparkFun-Passives" package="0603-CAP" value="0.01uF" x="104.14" y="26.67" rot="MR180"/>
+<element name="U$2" library="DiscreteComponents" package="HCMA1305" value="15uH" x="83.566" y="56.134" rot="MR90"/>
+<element name="C6" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="90.424" y="77.216" rot="MR180"/>
+<element name="C9" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="90.424" y="65.532" rot="MR180"/>
+<element name="C10" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="150uF" x="90.424" y="71.374" rot="MR180"/>
+<element name="C11" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="98.806" y="49.784" rot="MR270"/>
+<element name="C12" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="98.806" y="60.452" rot="MR90"/>
+<element name="C13" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="104.648" y="49.784" rot="MR270"/>
+<element name="C2" library="PowerComponents" package="CTAN(7.30_4.30MM)" value="10uF" x="104.648" y="60.452" rot="MR90"/>
 <element name="U$3" library="Other" package="BNO055" value="BNO055_9DOF_BREAKOUT" x="19.812" y="21.082" rot="R270"/>
 </elements>
 <signals>
@@ -729,16 +729,16 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <signal name="N$2">
 <contactref element="U1" pad="3"/>
 <contactref element="C4" pad="1"/>
-<wire x1="110.4392" y1="46.228" x2="134.454" y2="73.152" width="0" layer="19" extent="1-1"/>
+<wire x1="103.29" y1="26.67" x2="102.616" y2="30.2768" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="C4" pad="2"/>
 <contactref element="U1" pad="1"/>
 <contactref element="U$2" pad="P$1"/>
 <contactref element="U$1" pad="P$4"/>
-<wire x1="110.4392" y1="48.768" x2="107.494" y2="56.642" width="0" layer="19" extent="1-1"/>
-<wire x1="112.688" y1="26.924" x2="110.4392" y2="48.768" width="0" layer="19" extent="1-1"/>
-<wire x1="132.754" y1="73.152" x2="107.494" y2="56.642" width="0" layer="19" extent="1-1"/>
+<wire x1="87.884" y1="46.026" x2="89.066" y2="56.134" width="0" layer="19" extent="16-16"/>
+<wire x1="105.156" y1="30.2768" x2="87.884" y2="46.026" width="0" layer="19" extent="16-16"/>
+<wire x1="104.99" y1="26.67" x2="105.156" y2="30.2768" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="TAB"/>
@@ -753,17 +753,17 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="C13" pad="-"/>
 <contactref element="C2" pad="-"/>
 <contactref element="C12" pad="-"/>
-<wire x1="116.668" y1="77.47" x2="116.668" y2="83.312" width="0" layer="19" extent="1-1"/>
-<wire x1="116.668" y1="71.628" x2="116.668" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="128.386" y1="72.39" x2="116.668" y2="71.628" width="0" layer="19" extent="1-1"/>
-<wire x1="100.92" y1="77.47" x2="116.668" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="100.92" y1="71.628" x2="100.92" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="100.314" y1="58.927" x2="100.92" y2="71.628" width="0" layer="19" extent="1-1"/>
-<wire x1="100.314" y1="54.357" x2="100.314" y2="58.927" width="0" layer="19" extent="1-1"/>
-<wire x1="110.4392" y1="44.958" x2="100.314" y2="54.357" width="0" layer="19" extent="1-1"/>
-<wire x1="102.108" y1="44.958" x2="110.4392" y2="44.958" width="0" layer="19" extent="1-1"/>
-<wire x1="119.716" y1="36.83" x2="110.4392" y2="44.958" width="0" layer="19" extent="1-1"/>
-<wire x1="120.06" y1="54.864" x2="119.716" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="98.806" y1="63.672" x2="104.648" y2="63.672" width="0" layer="19" extent="16-16"/>
+<wire x1="93.644" y1="65.532" x2="98.806" y2="63.672" width="0" layer="19" extent="16-16"/>
+<wire x1="93.644" y1="71.374" x2="93.644" y2="65.532" width="0" layer="19" extent="16-16"/>
+<wire x1="93.644" y1="77.216" x2="93.644" y2="71.374" width="0" layer="19" extent="16-16"/>
+<wire x1="109.22" y1="48.122" x2="104.648" y2="63.672" width="0" layer="19" extent="16-16"/>
+<wire x1="104.648" y1="46.564" x2="109.22" y2="48.122" width="0" layer="19" extent="16-16"/>
+<wire x1="98.806" y1="46.564" x2="104.648" y2="46.564" width="0" layer="19" extent="16-16"/>
+<wire x1="101.346" y1="38.608" x2="98.806" y2="46.564" width="0" layer="19" extent="16-16"/>
+<wire x1="90.169" y1="38.846" x2="101.346" y2="38.608" width="0" layer="19" extent="16-16"/>
+<wire x1="85.599" y1="38.846" x2="90.169" y2="38.846" width="0" layer="19" extent="16-16"/>
+<wire x1="101.346" y1="30.2768" x2="101.346" y2="38.608" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+12V">
 <contactref element="U1" pad="2"/>
@@ -772,11 +772,14 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="C13" pad="+"/>
 <contactref element="C2" pad="+"/>
 <contactref element="C12" pad="+"/>
-<wire x1="123.108" y1="71.628" x2="107.36" y2="71.628" width="0" layer="19" extent="1-1"/>
-<wire x1="123.108" y1="77.47" x2="123.108" y2="71.628" width="0" layer="19" extent="1-1"/>
-<wire x1="130.186" y1="72.39" x2="123.108" y2="71.628" width="0" layer="19" extent="1-1"/>
-<wire x1="113.62" y1="54.864" x2="123.108" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="110.4392" y1="47.498" x2="113.62" y2="54.864" width="0" layer="19" extent="1-1"/>
+<polygon width="0.4064" layer="16">
+<vertex x="97.028" y="58.928"/>
+<vertex x="112.014" y="58.928"/>
+<vertex x="112.014" y="51.054"/>
+<vertex x="112.014" y="49.784"/>
+<vertex x="97.028" y="49.784"/>
+</polygon>
+<wire x1="109.22" y1="49.922" x2="103.886" y2="30.2768" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$2" pad="P$2"/>
@@ -784,10 +787,10 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="C6" pad="+"/>
 <contactref element="C9" pad="+"/>
 <contactref element="C10" pad="+"/>
-<wire x1="126.156" y1="36.83" x2="107.36" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="123.108" y1="83.312" x2="126.156" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="110.4392" y1="42.418" x2="123.108" y2="83.312" width="0" layer="19" extent="1-1"/>
-<wire x1="101.688" y1="26.924" x2="110.4392" y2="42.418" width="0" layer="19" extent="1-1"/>
+<wire x1="87.204" y1="71.374" x2="87.204" y2="77.216" width="0" layer="19" extent="16-16"/>
+<wire x1="87.204" y1="65.532" x2="87.204" y2="71.374" width="0" layer="19" extent="16-16"/>
+<wire x1="78.066" y1="56.134" x2="87.204" y2="65.532" width="0" layer="19" extent="16-16"/>
+<wire x1="98.806" y1="30.2768" x2="78.066" y2="56.134" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$4">
 <contactref element="PCB1" pad="P$1"/>
