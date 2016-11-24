@@ -748,46 +748,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="maxim">
-<description>&lt;b&gt;Maxim Components&lt;/b&gt;&lt;p&gt;
-
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SO08">
-<description>&lt;b&gt;Small Outline Package&lt;/b&gt; SOIC 150 mil</description>
-<wire x1="2.159" y1="1.9558" x2="-2.159" y2="1.9558" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-1.9558" x2="2.54" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.54" y1="1.5748" x2="-2.159" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="1.9558" x2="2.54" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.54" y1="-1.5748" x2="-2.159" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.159" y1="-1.9558" x2="2.159" y2="-1.9558" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.5748" x2="2.54" y2="1.5748" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="1.5748" x2="-2.54" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.5748" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-2.54" y1="-1.6002" x2="2.54" y2="-1.6002" width="0.0508" layer="21"/>
-<smd name="1" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="8" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="2" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="3" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="7" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="6" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="4" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="5" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<text x="3.937" y="-2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-2.921" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
-<rectangle x1="-2.159" y1="-3.0988" x2="-1.651" y2="-1.9558" layer="51"/>
-<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
-<rectangle x1="0.381" y1="-3.0734" x2="0.889" y2="-1.9304" layer="51"/>
-<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
-<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
-<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
-<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
-</package>
-</packages>
-</library>
 <library name="test_lib">
 <packages>
 <package name="MSOP_10">
@@ -1144,12 +1104,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="PCB1" library="MicrocontrollerComponents" package="RPI2" value="RPI2" x="90.216" y="89.022" rot="MR270"/>
 <element name="U$3" library="Other" package="BNO055" value="BNO055_9DOF_BREAKOUT" x="21.844" y="25.146"/>
 <element name="U$4" library="backplane_to_shield_connector" package="MA20-2" value="SHIELDCONNECTOR" x="60.706" y="40.894"/>
-<element name="IC1" library="maxim" package="SO08" value="MAX3467CPA" x="-5.1562" y="-45.0088">
-<attribute name="OC_NEWARK" value="unknown" x="-14.2494" y="-28.6258" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="-14.2494" y="-28.6258" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="-14.2494" y="-28.6258" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="-14.2494" y="-28.6258" size="1.778" layer="27" display="off"/>
-</element>
 <element name="U$7" library="test_lib" package="MSOP_10" value="PCA9615" x="-7.9248" y="-54.991"/>
 <element name="U2" library="LDO" package="TO-263-5" value="MIC29501-5.0WU" x="101.1682" y="62.9158" rot="MR0">
 <attribute name="VENDOR" value="MICREL" x="101.1682" y="62.9158" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1177,7 +1131,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <signal name="N$1">
 </signal>
 <signal name="GND">
-<contactref element="IC1" pad="4"/>
 <contactref element="U2" pad="3"/>
 <contactref element="U3" pad="3"/>
 <contactref element="U2" pad="6"/>
@@ -1207,8 +1160,14 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <vertex x="123.7234" y="63.0174"/>
 </polygon>
 <contactref element="U1" pad="8"/>
-<wire x1="-3.2512" y1="-48.0822" x2="-14.4164" y2="-60.4296" width="0" layer="19" extent="1-1"/>
-<wire x1="101.1564" y1="49.276" x2="-3.2512" y2="-48.0822" width="0" layer="19" extent="1-16"/>
+<wire x1="101.1682" y1="65.659" x2="112.7506" y2="65.7098" width="0" layer="19" extent="16-16"/>
+<wire x1="112.7506" y1="53.9115" x2="112.7506" y2="65.7098" width="0" layer="19" extent="16-16"/>
+<wire x1="112.7878" y1="51.1048" x2="112.7506" y2="53.9115" width="0" layer="19" extent="16-16"/>
+<wire x1="112.7896" y1="49.5046" x2="112.7878" y2="51.1048" width="0" layer="19" extent="16-16"/>
+<wire x1="101.1682" y1="53.8607" x2="112.7506" y2="53.9115" width="0" layer="19" extent="16-16"/>
+<wire x1="101.1292" y1="51.0032" x2="101.1682" y2="53.8607" width="0" layer="19" extent="16-16"/>
+<wire x1="101.1564" y1="49.276" x2="101.1292" y2="51.0032" width="0" layer="19" extent="16-16"/>
+<wire x1="-14.4164" y1="-60.4296" x2="101.1564" y2="49.276" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="+12V">
 <contactref element="R1" pad="2"/>
@@ -1261,27 +1220,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </signal>
 <signal name="N$4">
 <contactref element="PCB1" pad="P$1"/>
-</signal>
-<signal name="+3V3">
-<contactref element="IC1" pad="1"/>
-</signal>
-<signal name="TETHER_RX">
-<contactref element="IC1" pad="2"/>
-</signal>
-<signal name="TETHER_TX">
-<contactref element="IC1" pad="3"/>
-</signal>
-<signal name="COM_A">
-<contactref element="IC1" pad="8"/>
-</signal>
-<signal name="COM_B">
-<contactref element="IC1" pad="7"/>
-</signal>
-<signal name="COM_Y">
-<contactref element="IC1" pad="5"/>
-</signal>
-<signal name="COM_Z">
-<contactref element="IC1" pad="6"/>
 </signal>
 <signal name="EN1">
 <contactref element="R1" pad="1"/>
