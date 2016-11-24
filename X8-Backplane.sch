@@ -2411,6 +2411,223 @@ Source: MAX3465-MAX3469.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="BackplaneParts">
+<packages>
+<package name="MAX3491">
+<smd name="GND7" x="0" y="0" dx="1.981" dy="0.533" layer="1"/>
+<smd name="GND6" x="0" y="1.27" dx="1.981" dy="0.533" layer="1"/>
+<smd name="DI" x="0" y="2.54" dx="1.981" dy="0.533" layer="1"/>
+<smd name="DE" x="0" y="3.81" dx="1.981" dy="0.533" layer="1"/>
+<smd name="!RE" x="0" y="5.08" dx="1.981" dy="0.533" layer="1"/>
+<smd name="R0" x="0" y="6.35" dx="1.981" dy="0.533" layer="1"/>
+<smd name="NC1" x="0" y="7.62" dx="1.981" dy="0.533" layer="1"/>
+<smd name="NC8" x="5.9185" y="0" dx="1.981" dy="0.533" layer="1"/>
+<smd name="Y" x="5.9185" y="1.27" dx="1.981" dy="0.533" layer="1"/>
+<smd name="Z" x="5.9185" y="2.54" dx="1.981" dy="0.533" layer="1"/>
+<smd name="B" x="5.9185" y="3.81" dx="1.981" dy="0.533" layer="1"/>
+<smd name="A" x="5.9185" y="5.08" dx="1.981" dy="0.533" layer="1"/>
+<smd name="VCC13" x="5.9185" y="6.35" dx="1.981" dy="0.533" layer="1"/>
+<smd name="VCC14" x="5.9185" y="7.62" dx="1.981" dy="0.533" layer="1"/>
+<wire x1="-0.1" y1="8.1" x2="-0.1" y2="-0.5" width="0.127" layer="20"/>
+<wire x1="-0.1" y1="-0.5" x2="5.9" y2="-0.5" width="0.127" layer="20"/>
+<wire x1="5.9" y1="-0.5" x2="5.9" y2="8.1" width="0.127" layer="20"/>
+<wire x1="5.9" y1="8.1" x2="-0.1" y2="8.1" width="0.127" layer="20"/>
+<circle x="1" y="7.2" radius="0.360553125" width="0.127" layer="20"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX3491CSD">
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<pin name="R0" x="-15.24" y="15.24" length="middle"/>
+<pin name="!RE" x="-15.24" y="10.16" length="middle"/>
+<pin name="DE" x="-15.24" y="5.08" length="middle"/>
+<pin name="DI" x="-15.24" y="0" length="middle"/>
+<pin name="GND6" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND7" x="-15.24" y="-10.16" length="middle"/>
+<pin name="Y" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="Z" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="B" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="A" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="VCC13" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="VCC14" x="15.24" y="15.24" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX3491">
+<gates>
+<gate name="G$1" symbol="MAX3491CSD" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="" package="MAX3491">
+<connects>
+<connect gate="G$1" pin="!RE" pad="!RE"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="DE" pad="DE"/>
+<connect gate="G$1" pin="DI" pad="DI"/>
+<connect gate="G$1" pin="GND6" pad="GND6"/>
+<connect gate="G$1" pin="GND7" pad="GND7"/>
+<connect gate="G$1" pin="R0" pad="R0"/>
+<connect gate="G$1" pin="VCC13" pad="VCC13"/>
+<connect gate="G$1" pin="VCC14" pad="VCC14"/>
+<connect gate="G$1" pin="Y" pad="Y"/>
+<connect gate="G$1" pin="Z" pad="Z"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="CamSensComponents">
+<packages>
+<package name="SOP8">
+<description>&lt;b&gt;&lt;h1&gt;Description&lt;/h1&gt;&lt;b&gt;
+Has 8 pins, 5x4.4mm device
+&lt;h6&gt;This package can also be found as SOIC8 &lt;/h6&gt;
+For use with BD6221F-E2 (H-bridge) device</description>
+<wire x1="0" y1="0" x2="0" y2="4.4" width="0.127" layer="51"/>
+<wire x1="0" y1="4.4" x2="5" y2="4.4" width="0.127" layer="51"/>
+<wire x1="5" y1="4.4" x2="5" y2="0" width="0.127" layer="51"/>
+<wire x1="5" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<smd name="8" x="0.595" y="4.95" dx="0.462" dy="1.1" layer="1"/>
+<smd name="7" x="1.865" y="4.95" dx="0.462" dy="1.1" layer="1"/>
+<smd name="6" x="3.135" y="4.95" dx="0.462" dy="1.1" layer="1"/>
+<smd name="5" x="4.405" y="4.95" dx="0.462" dy="1.1" layer="1"/>
+<rectangle x1="1.655" y1="-0.9" x2="2.075" y2="0" layer="51"/>
+<rectangle x1="0.385" y1="-0.9" x2="0.805" y2="0" layer="51"/>
+<rectangle x1="4.195" y1="-0.9" x2="4.615" y2="0" layer="51"/>
+<rectangle x1="2.925" y1="-0.9" x2="3.345" y2="0" layer="51"/>
+<rectangle x1="0.385" y1="4.4" x2="0.805" y2="5.3" layer="51"/>
+<rectangle x1="1.655" y1="4.4" x2="2.075" y2="5.3" layer="51"/>
+<rectangle x1="2.925" y1="4.4" x2="3.345" y2="5.3" layer="51"/>
+<rectangle x1="4.195" y1="4.4" x2="4.615" y2="5.3" layer="51"/>
+<smd name="1" x="0.595" y="-0.55" dx="0.462" dy="1.1" layer="1"/>
+<smd name="2" x="1.865" y="-0.55" dx="0.462" dy="1.1" layer="1"/>
+<smd name="3" x="3.135" y="-0.55" dx="0.462" dy="1.1" layer="1"/>
+<smd name="4" x="4.405" y="-0.55" dx="0.462" dy="1.1" layer="1"/>
+<circle x="0.7" y="1.3" radius="0.3" width="0.2032" layer="21"/>
+<wire x1="-0.1" y1="3.9" x2="5.1" y2="3.9" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="0.5" x2="0" y2="0.5" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="3.9" x2="5.1" y2="0.5" width="0.2032" layer="21"/>
+<wire x1="-0.1" y1="0.5" x2="-0.1" y2="3.9" width="0.2032" layer="21"/>
+<text x="2" y="3" size="0.2032" layer="27">&gt;Value</text>
+<text x="2" y="2" size="0.2032" layer="25">&gt;Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="BD6221F">
+<description>BD6221F
+H-bridge driver (full bridge drivers) used for brush motor applications</description>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<pin name="OUT1" x="12.7" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="VCC@2" x="-12.7" y="5.08" length="short" direction="pwr"/>
+<pin name="VCC@3" x="-12.7" y="2.54" length="short" direction="pwr"/>
+<pin name="FIN" x="12.7" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="-12.7" y="-7.62" length="short" direction="pwr"/>
+<pin name="OUT2" x="12.7" y="-5.08" length="short" direction="out" rot="R180"/>
+<pin name="VREF" x="-12.7" y="-2.54" length="short"/>
+<pin name="RIN" x="12.7" y="2.54" length="short" direction="in" rot="R180"/>
+<text x="-10.16" y="7.62" size="1.9304" layer="95">&gt;Name</text>
+<text x="-10.16" y="-12.7" size="1.9304" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BD6221F" prefix="U">
+<description>H-bridge driver (full bridge driver) for brush motor applications</description>
+<gates>
+<gate name="U1" symbol="BD6221F" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOP" package="SOP8">
+<connects>
+<connect gate="U1" pin="FIN" pad="4"/>
+<connect gate="U1" pin="GND" pad="8"/>
+<connect gate="U1" pin="OUT1" pad="1"/>
+<connect gate="U1" pin="OUT2" pad="7"/>
+<connect gate="U1" pin="RIN" pad="5"/>
+<connect gate="U1" pin="VCC@2" pad="2"/>
+<connect gate="U1" pin="VCC@3" pad="3"/>
+<connect gate="U1" pin="VREF" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="HBridge">
+<packages>
+<package name="BD6221">
+<wire x1="0" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
+<wire x1="5" y1="0" x2="5" y2="4.4" width="0.127" layer="21"/>
+<wire x1="5" y1="4.4" x2="0" y2="4.4" width="0.127" layer="21"/>
+<wire x1="0" y1="4.4" x2="0" y2="2.9" width="0.127" layer="21"/>
+<circle x="0.8" y="0.7" radius="0.5" width="0.127" layer="21"/>
+<wire x1="0" y1="2.9" x2="0" y2="1.6" width="0.127" layer="21"/>
+<wire x1="0" y1="1.6" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="2.9" x2="0" y2="1.6" width="0.127" layer="21" curve="-180"/>
+<smd name="P$1" x="0.595" y="-0.5" dx="0.9" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$2" x="1.865" y="-0.5" dx="0.9" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$3" x="3.135" y="-0.5" dx="0.9" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$4" x="4.405" y="-0.5" dx="0.9" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$8" x="0.595" y="4.9" dx="0.9" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$7" x="1.865" y="4.9" dx="0.9" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$6" x="3.135" y="4.9" dx="0.9" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$5" x="4.405" y="4.9" dx="0.9" dy="0.42" layer="1" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BD6221">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="OUT1" x="-7.62" y="-15.24" length="middle" rot="R90"/>
+<pin name="VCC1" x="-2.54" y="-15.24" length="middle" rot="R90"/>
+<pin name="VCC2" x="2.54" y="-15.24" length="middle" rot="R90"/>
+<pin name="FIN" x="7.62" y="-15.24" length="middle" rot="R90"/>
+<pin name="RIN" x="7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="VREF" x="2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="OUT2" x="-2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="GND" x="-7.62" y="12.7" length="middle" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BD6221">
+<gates>
+<gate name="G$1" symbol="BD6221" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BD6221">
+<connects>
+<connect gate="G$1" pin="FIN" pad="P$4"/>
+<connect gate="G$1" pin="GND" pad="P$8"/>
+<connect gate="G$1" pin="OUT1" pad="P$1"/>
+<connect gate="G$1" pin="OUT2" pad="P$7"/>
+<connect gate="G$1" pin="RIN" pad="P$5"/>
+<connect gate="G$1" pin="VCC1" pad="P$2"/>
+<connect gate="G$1" pin="VCC2" pad="P$3"/>
+<connect gate="G$1" pin="VREF" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2446,6 +2663,9 @@ Source: MAX3465-MAX3469.pdf</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U$1" library="BackplaneParts" deviceset="MAX3491" device=""/>
+<part name="U1" library="CamSensComponents" deviceset="BD6221F" device="SOP"/>
+<part name="U$2" library="HBridge" deviceset="BD6221" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2484,6 +2704,9 @@ Source: MAX3465-MAX3469.pdf</description>
 <instance part="GND3" gate="1" x="220.98" y="-96.52"/>
 <instance part="GND4" gate="1" x="220.98" y="-58.42"/>
 <instance part="GND7" gate="1" x="149.86" y="-93.98"/>
+<instance part="U$1" gate="G$1" x="495.3" y="106.68"/>
+<instance part="U1" gate="U1" x="500.38" y="66.04"/>
+<instance part="U$2" gate="G$1" x="533.4" y="66.04" rot="R90"/>
 </instances>
 <busses>
 </busses>
