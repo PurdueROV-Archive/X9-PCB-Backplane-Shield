@@ -1,0 +1,35 @@
+rs485
+connect gnd and vcc
+R0 connects to the TX of rpi
+DI connects to RX of rpi
+re & de are enables - send to gip of rpi (nothing special about pin on rip)
+*TERMINATING RESISTOR* - probably with ZY
+A&B and Z&Y are pinned out in the connector
+
+imu (BNO55)
+SDA&SCL - must be equal length connect to SDA and SCL in the rpi, AND to the shield connector
+PS1 & PS0 are mode select pins, pull low for i2c
+PS0 pull low (ground)
+PS1 pull low (ground)
+ADR pull low (ground)
+*LOOK AT NAVIGATION BOARD FROM LAST YEAR FOR EXAMPLE OF USAGE*
+
+Pressure sensor
+i2c address 0x76
+
+i2c differential line chip (PCA9615)
+Pin out all to board to board connector
+*check data sheet for VDDA and VDDB*
+SCL&SDA
+*check data sheet for EN*
+pin out all P/M differential lines
+*make sure all of the traces are as short as possible*
+
+MISC
+water ingress detector
+well placed test points
+two additional header pins for i2c (one for scl and one for sca)
+pin out 5v 3.3v and gnd
+pin out rx and tx from rpi
+pin out all four lines of rs485 differential chip
+pin out two pwm lines for leds and servo, originate on rpi
