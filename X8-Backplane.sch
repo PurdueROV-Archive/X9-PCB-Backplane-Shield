@@ -3113,9 +3113,9 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="381" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="25"/>
-<wire x1="198.12" y1="111.76" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
-<label x="200.66" y="111.76" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="33"/>
+<wire x1="198.12" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
+<label x="203.2" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B" class="0">
@@ -3125,9 +3125,9 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="381" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="23"/>
-<wire x1="198.12" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
-<label x="200.66" y="109.22" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="31"/>
+<wire x1="198.12" y1="119.38" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
+<label x="203.2" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Z" class="0">
@@ -3137,9 +3137,9 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="381" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="21"/>
-<wire x1="198.12" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
-<label x="200.66" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="29"/>
+<wire x1="198.12" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
+<label x="203.2" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Y" class="0">
@@ -3149,9 +3149,9 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="381" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="19"/>
-<wire x1="198.12" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
-<label x="200.66" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="27"/>
+<wire x1="198.12" y1="114.3" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
+<label x="203.2" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -3291,14 +3291,14 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 </net>
 <net name="SERVO_PWM" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="29"/>
-<wire x1="198.12" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
-<label x="200.66" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO18"/>
 <wire x1="40.64" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
 <label x="20.32" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="34"/>
+<wire x1="182.88" y1="121.92" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
+<label x="175.26" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BT_LED_ON" class="0">
