@@ -156,13 +156,13 @@
 <plain>
 <circle x="63.43686875" y="38.21558125" radius="73.025" width="0.4064" layer="51"/>
 <wire x1="38.29215" y1="99.28131875" x2="2.371125" y2="63.36029375" width="0.4064" layer="20"/>
-<wire x1="124.50260625" y1="13.0708625" x2="103.567584375" y2="-7.3561625" width="0.4064" layer="20"/>
-<wire x1="2.371125" y1="13.0708625" x2="22.29015" y2="-7.3561625" width="0.4064" layer="20"/>
+<wire x1="124.50260625" y1="13.0708625" x2="121.550784375" y2="10.2460375" width="0.4064" layer="20"/>
+<wire x1="2.371125" y1="13.0708625" x2="4.91655" y2="10.4238375" width="0.4064" layer="20"/>
 <wire x1="88.581584375" y1="99.28131875" x2="124.50260625" y2="63.36029375" width="0.4064" layer="20"/>
 <wire x1="88.581584375" y1="99.28131875" x2="38.29215" y2="99.28131875" width="0.4064" layer="20"/>
 <wire x1="124.50260625" y1="63.36029375" x2="124.50260625" y2="13.0708625" width="0.4064" layer="20"/>
 <wire x1="2.371125" y1="63.36029375" x2="2.371125" y2="13.0708625" width="0.4064" layer="20"/>
-<wire x1="22.352" y1="-7.366" x2="103.378" y2="-7.366" width="0.4064" layer="20" curve="-104.736525"/>
+<wire x1="121.576184375" y1="10.27971875" x2="4.94195" y2="10.43211875" width="0.4064" layer="20"/>
 </plain>
 <libraries>
 <library name="MicrocontrollerComponents">
@@ -1201,7 +1201,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="20.8534" y="-10.8712"/>
 <vertex x="106.172" y="-10.8712"/>
 <vertex x="126.5936" y="11.7094"/>
-<vertex x="126.5936" y="62.0776"/>
+<vertex x="127.2032" y="62.8396"/>
 <vertex x="90.0684" y="101.6762"/>
 <vertex x="38.227" y="101.981"/>
 </polygon>
@@ -1210,10 +1210,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="32.131" y="100.7872"/>
 <vertex x="-0.9906" y="63.7794"/>
 <vertex x="-0.127" y="9.1694"/>
-<vertex x="21.1582" y="-12.1158"/>
-<vertex x="106.4768" y="-12.1158"/>
+<vertex x="20.0914" y="-2.0828"/>
+<vertex x="105.41" y="-2.0828"/>
 <vertex x="129.159" y="10.5664"/>
-<vertex x="129.159" y="60.9346"/>
+<vertex x="130.5306" y="61.7982"/>
 <vertex x="90.3732" y="100.4316"/>
 <vertex x="38.5318" y="100.7364"/>
 </polygon>
@@ -1337,7 +1337,6 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="110.871" y="42.037"/>
 <vertex x="110.871" y="51.181"/>
 <vertex x="105.283" y="51.181"/>
-<vertex x="105.283" y="48.387"/>
 <vertex x="80.391" y="48.387"/>
 <vertex x="80.391" y="44.958"/>
 <vertex x="68.072" y="44.958"/>
