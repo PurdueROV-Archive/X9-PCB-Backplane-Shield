@@ -2828,15 +2828,10 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <junction x="149.86" y="-81.28"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$2" pin="23"/>
-<wire x1="236.22" y1="109.22" x2="233.68" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$2" pin="24"/>
-<wire x1="233.68" y1="109.22" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="111.76" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="114.3" x2="233.68" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="116.84" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="124.46" x2="233.68" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="254" y1="109.22" x2="254" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="254" y1="111.76" x2="254" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="254" y1="114.3" x2="254" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="254" y1="116.84" x2="254" y2="124.46" width="0.1524" layer="91"/>
@@ -2850,7 +2845,6 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <junction x="233.68" y="116.84"/>
 <pinref part="U$4" gate="G$2" pin="26"/>
 <wire x1="251.46" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
-<junction x="254" y="111.76"/>
 <pinref part="U$4" gate="G$2" pin="28"/>
 <wire x1="251.46" y1="114.3" x2="254" y2="114.3" width="0.1524" layer="91"/>
 <junction x="254" y="114.3"/>
@@ -2858,6 +2852,8 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <wire x1="251.46" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
 <junction x="254" y="116.84"/>
 <pinref part="P+4" gate="1" pin="+12V"/>
+<pinref part="U$4" gate="G$2" pin="25"/>
+<wire x1="233.68" y1="111.76" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="U1" pin="VCC@3"/>
@@ -2932,29 +2928,29 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="528.32" y="185.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$2" pin="13"/>
-<wire x1="233.68" y1="99.06" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$2" pin="15"/>
-<wire x1="236.22" y1="99.06" x2="233.68" y2="99.06" width="0.1524" layer="91"/>
-<junction x="233.68" y="99.06"/>
-<wire x1="233.68" y1="99.06" x2="223.52" y2="99.06" width="0.1524" layer="91"/>
-<label x="223.52" y="91.44" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="254" y1="99.06" x2="254" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$2" pin="16"/>
-<wire x1="251.46" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
-<junction x="254" y="99.06"/>
-<pinref part="U$4" gate="G$2" pin="14"/>
-<wire x1="251.46" y1="96.52" x2="254" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="254" y1="99.06" x2="261.62" y2="99.06" width="0.1524" layer="91"/>
-<label x="266.7" y="91.44" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U6" gate="G$1" pin="S2"/>
 <wire x1="535.94" y1="124.46" x2="535.94" y2="132.08" width="0.1524" layer="91"/>
 <label x="525.78" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$2" pin="19"/>
+<wire x1="236.22" y1="104.14" x2="233.68" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="104.14" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$2" pin="17"/>
+<wire x1="233.68" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="101.6" x2="228.6" y2="101.6" width="0.1524" layer="91"/>
+<junction x="233.68" y="101.6"/>
+<label x="223.52" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$2" pin="18"/>
+<wire x1="251.46" y1="101.6" x2="254" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="254" y1="101.6" x2="254" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$2" pin="20"/>
+<wire x1="254" y1="104.14" x2="251.46" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="254" y1="101.6" x2="259.08" y2="101.6" width="0.1524" layer="91"/>
+<junction x="254" y="101.6"/>
+<label x="251.46" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -3173,14 +3169,14 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="492.76" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="10"/>
-<wire x1="182.88" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
-<label x="170.18" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="23"/>
+<wire x1="236.22" y1="109.22" x2="233.68" y2="109.22" width="0.1524" layer="91"/>
+<label x="226.06" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="9"/>
-<wire x1="198.12" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
-<label x="200.66" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="24"/>
+<wire x1="251.46" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91"/>
+<label x="251.46" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_PIEZO" class="0">
@@ -3190,14 +3186,14 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="492.76" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="12"/>
-<wire x1="182.88" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<label x="170.18" y="93.98" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="21"/>
+<wire x1="236.22" y1="106.68" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
+<label x="226.06" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="11"/>
-<wire x1="198.12" y1="93.98" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
-<label x="200.66" y="93.98" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="22"/>
+<wire x1="251.46" y1="106.68" x2="254" y2="106.68" width="0.1524" layer="91"/>
+<label x="251.46" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RIN" class="0">
@@ -3226,14 +3222,14 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="485.14" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$2" pin="18"/>
-<wire x1="251.46" y1="101.6" x2="261.62" y2="101.6" width="0.1524" layer="91"/>
-<label x="254" y="101.6" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="13"/>
+<wire x1="236.22" y1="96.52" x2="228.6" y2="96.52" width="0.1524" layer="91"/>
+<label x="223.52" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$2" pin="17"/>
-<wire x1="236.22" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
-<label x="226.06" y="101.6" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="14"/>
+<wire x1="251.46" y1="96.52" x2="259.08" y2="96.52" width="0.1524" layer="91"/>
+<label x="251.46" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V_LASER" class="0">
@@ -3243,14 +3239,14 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="533.4" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$2" pin="20"/>
-<wire x1="251.46" y1="104.14" x2="261.62" y2="104.14" width="0.1524" layer="91"/>
-<label x="254" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="15"/>
+<wire x1="236.22" y1="99.06" x2="228.6" y2="99.06" width="0.1524" layer="91"/>
+<label x="223.52" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$2" pin="19"/>
-<wire x1="236.22" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
-<label x="226.06" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="16"/>
+<wire x1="251.46" y1="99.06" x2="259.08" y2="99.06" width="0.1524" layer="91"/>
+<label x="251.46" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_ON" class="0">
@@ -3313,21 +3309,21 @@ H-bridge driver (full bridge drivers) used for brush motor applications</descrip
 <label x="22.86" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BT_LED_5V" class="0">
+<net name="+5V_BT_LED" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="D2"/>
 <wire x1="535.94" y1="106.68" x2="535.94" y2="99.06" width="0.1524" layer="91"/>
 <label x="530.86" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="16"/>
-<wire x1="182.88" y1="99.06" x2="170.18" y2="99.06" width="0.1524" layer="91"/>
-<label x="170.18" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="11"/>
+<wire x1="236.22" y1="93.98" x2="228.6" y2="93.98" width="0.1524" layer="91"/>
+<label x="223.52" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="15"/>
-<wire x1="198.12" y1="99.06" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
-<label x="200.66" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$2" pin="12"/>
+<wire x1="251.46" y1="93.98" x2="259.08" y2="93.98" width="0.1524" layer="91"/>
+<label x="251.46" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
