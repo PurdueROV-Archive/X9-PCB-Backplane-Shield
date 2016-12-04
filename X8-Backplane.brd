@@ -8,7 +8,7 @@
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
@@ -1229,6 +1229,13 @@ Please make sure your boards conform to these design rules.</description>
 <via x="15.748" y="57.658" extent="1-16" drill="0.6"/>
 <via x="47.1678" y="81.7626" extent="1-16" drill="0.6" diameter="0.3048"/>
 <via x="22.4028" y="64.0334" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="32.385" y="35.433" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="65.4304" y="21.6662" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="102.9462" y="12.0396" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="53.2638" y="57.9374" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="49.2252" y="66.3194" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="79.5782" y="79.0194" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="102.743" y="77.1652" extent="1-16" drill="0.6" diameter="0.3048"/>
 </signal>
 <signal name="+12V">
 <contactref element="U$4" pad="67"/>
@@ -1539,10 +1546,10 @@ Please make sure your boards conform to these design rules.</description>
 <polygon width="0.254" layer="16" thermals="no">
 <vertex x="122.8852" y="30.1752"/>
 <vertex x="103.4542" y="30.1752"/>
-<vertex x="103.4542" y="32.9946"/>
+<vertex x="99.1362" y="32.7406"/>
 <vertex x="68.6054" y="32.9946"/>
 <vertex x="68.6054" y="30.4292"/>
-<vertex x="101.4222" y="30.4292"/>
+<vertex x="97.8662" y="30.4292"/>
 <vertex x="101.4222" y="28.3718"/>
 <vertex x="122.8852" y="28.3718"/>
 </polygon>
@@ -1603,25 +1610,13 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$4" pad="51"/>
 <contactref element="U$4" pad="52"/>
 <wire x1="119.126" y1="26.924" x2="121.666" y2="26.924" width="1.016" layer="16"/>
-<wire x1="119.126" y1="26.924" x2="94.2594" y2="26.924" width="1.016" layer="16"/>
-<wire x1="94.2594" y1="26.924" x2="94.2594" y2="24.7396" width="1.016" layer="16"/>
+<wire x1="119.126" y1="26.924" x2="97.0534" y2="26.924" width="1.016" layer="16"/>
+<wire x1="97.0534" y1="26.924" x2="94.2594" y2="24.7396" width="1.016" layer="16"/>
 <wire x1="94.2594" y1="24.7396" x2="54.6608" y2="24.9936" width="1.016" layer="16"/>
 <wire x1="54.6608" y1="24.9936" x2="54.4068" y2="26.9367" width="1.016" layer="16"/>
 </signal>
 <signal name="N$3">
 <via x="32.9946" y="12.5222" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$4">
-<via x="53.2638" y="57.9374" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$5">
-<via x="49.2252" y="66.3194" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$6">
-<via x="79.5782" y="79.0194" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$7">
-<via x="102.743" y="77.1652" extent="1-16" drill="0.6" diameter="0.3048"/>
 </signal>
 <signal name="N$8">
 <via x="65.2018" y="95.4786" extent="1-16" drill="0.6" diameter="0.3048"/>
@@ -1629,20 +1624,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$10">
 <via x="18.923" y="12.2936" extent="1-16" drill="0.6" diameter="0.3048"/>
 </signal>
-<signal name="N$12">
-<via x="32.385" y="35.433" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$13">
-<via x="102.9462" y="12.0396" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$14">
-<via x="89.916" y="54.3306" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
 <signal name="N$15">
 <via x="99.822" y="44.3484" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$17">
-<via x="65.4304" y="21.6662" extent="1-16" drill="0.6" diameter="0.3048"/>
 </signal>
 <signal name="RX_H">
 <contactref element="U$1" pad="Z"/>
