@@ -1236,6 +1236,10 @@ Please make sure your boards conform to these design rules.</description>
 <via x="49.2252" y="66.3194" extent="1-16" drill="0.6" diameter="0.3048"/>
 <via x="68.9102" y="67.5894" extent="1-16" drill="0.6" diameter="0.3048"/>
 <via x="102.743" y="77.1652" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="37.6174" y="81.4832" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="18.923" y="12.2936" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="32.9946" y="12.5222" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="101.092" y="53.1876" extent="1-16" drill="0.6" diameter="0.3048"/>
 </signal>
 <signal name="+12V">
 <contactref element="U$4" pad="67"/>
@@ -1613,17 +1617,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="94.2594" y1="24.7396" x2="54.6608" y2="24.9936" width="1.016" layer="16"/>
 <wire x1="54.6608" y1="24.9936" x2="54.4068" y2="26.9367" width="1.016" layer="16"/>
 </signal>
-<signal name="N$3">
-<via x="32.9946" y="12.5222" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
 <signal name="N$8">
 <via x="49.7078" y="95.2246" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$10">
-<via x="18.923" y="12.2936" extent="1-16" drill="0.6" diameter="0.3048"/>
-</signal>
-<signal name="N$15">
-<via x="101.092" y="53.1876" extent="1-16" drill="0.6" diameter="0.3048"/>
 </signal>
 <signal name="RX_H">
 <contactref element="U$1" pad="Z"/>
