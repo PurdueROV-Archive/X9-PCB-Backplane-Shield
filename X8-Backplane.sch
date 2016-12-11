@@ -2203,6 +2203,7 @@ Drawing link: &lt;a href="http://pdfserv.maximintegrated.com/land_patterns/90-01
 <text x="-5" y="-7" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-3.425" y1="4" x2="3.425" y2="4" width="0.127" layer="21"/>
 <wire x1="3.425" y1="-4" x2="-3.425" y2="-4" width="0.127" layer="21"/>
+<circle x="-1.524" y="2.794" radius="0.254" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -8153,12 +8154,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES"/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES"/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="1uF"/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8298,12 +8300,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R7" gate="G$1" x="144.78" y="-50.8"/>
 <instance part="GND23" gate="1" x="157.48" y="-55.88"/>
 <instance part="SUPPLY7" gate="G$1" x="144.78" y="-30.48"/>
-<instance part="R8" gate="G$1" x="91.44" y="-40.64"/>
 <instance part="SUPPLY8" gate="G$1" x="91.44" y="-35.56"/>
 <instance part="R9" gate="G$1" x="91.44" y="-45.72"/>
 <instance part="SUPPLY9" gate="G$1" x="81.28" y="-45.72"/>
 <instance part="SUPPLY10" gate="G$1" x="81.28" y="-50.8"/>
 <instance part="R10" gate="G$1" x="91.44" y="-50.8"/>
+<instance part="C5" gate="G$1" x="66.04" y="-45.72"/>
+<instance part="GND24" gate="1" x="66.04" y="-53.34"/>
 </instances>
 <busses>
 </busses>
@@ -8527,11 +8530,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="AGND"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="99.06" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="-30.48" x2="78.74" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-40.64" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="86.36" y="-30.48"/>
+<wire x1="99.06" y1="-30.48" x2="78.74" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -8543,6 +8542,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="149.86" y1="-50.8" x2="157.48" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="-50.8" x2="157.48" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="66.04" y1="-48.26" x2="66.04" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -9226,13 +9230,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="137.16" y="-40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="V18"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="-40.64" x2="96.52" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="!I2C!/SPI"/>
@@ -9257,6 +9254,37 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="U2" gate="G$1" pin="DOUT/SDA"/>
 <wire x1="99.06" y1="-55.88" x2="91.44" y2="-55.88" width="0.1524" layer="91"/>
 <label x="91.44" y="-55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="U2" gate="G$1" pin="V18"/>
+<wire x1="66.04" y1="-40.64" x2="99.06" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="DIN/A1"/>
+<wire x1="99.06" y1="-71.12" x2="91.44" y2="-71.12" width="0.1524" layer="91"/>
+<label x="91.44" y="-71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="GPIO20"/>
+<wire x1="40.64" y1="134.62" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
+<label x="22.86" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCLK" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="SCLK/SCL"/>
+<wire x1="99.06" y1="-60.96" x2="91.44" y2="-60.96" width="0.1524" layer="91"/>
+<label x="91.44" y="-60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="GPIO21"/>
+<wire x1="40.64" y1="139.7" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
+<label x="22.86" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
