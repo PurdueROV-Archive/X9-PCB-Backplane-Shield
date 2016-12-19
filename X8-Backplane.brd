@@ -2730,6 +2730,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="J4" pad="2"/>
 <contactref element="C7" pad="2"/>
 <contactref element="C8" pad="1"/>
+<via x="37.8714" y="81.4324" extent="1-16" drill="0.5"/>
+<via x="48.1584" y="84.1502" extent="1-16" drill="0.5"/>
+<via x="46.355" y="82.1436" extent="1-16" drill="0.5"/>
+<via x="33.3756" y="78.5368" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="+12V">
 <contactref element="U$4" pad="67"/>
@@ -3458,8 +3462,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="4,16,e0a2e73f49c536bb"/>
 <approved hash="4,16,e2851b7e31f5b491"/>
 <approved hash="4,16,e6851573ba1e3089"/>
-<approved hash="4,16,786f8a696f6a45e5"/>
 <approved hash="4,16,a00021689323acc8"/>
+<approved hash="4,16,786f8a696f6a45e5"/>
 </errors>
 </board>
 </drawing>
