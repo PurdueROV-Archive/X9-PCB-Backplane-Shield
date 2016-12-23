@@ -185,6 +185,7 @@
 <text x="27.686" y="54.864" size="1.778" layer="21">2</text>
 <text x="27.686" y="57.15" size="1.778" layer="21">3</text>
 <text x="102.616" y="25.146" size="1.016" layer="21">12V ON</text>
+<text x="34.036" y="91.948" size="1.778" layer="22">Made by Jason King, James Scholl, and Ryan McBee</text>
 </plain>
 <libraries>
 <library name="MicrocontrollerComponents">
