@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -167,12 +167,12 @@
 <text x="106.7054" y="34.2138" size="1.27" layer="21">LASER</text>
 <text x="106.6292" y="30.2514" size="1.27" layer="21">CAM LED</text>
 <text x="106.5784" y="27.0256" size="1.27" layer="21">BT LED</text>
-<text x="110.744" y="17.9578" size="1.27" layer="21" rot="R90">12V IN</text>
+<text x="113.157" y="18.5928" size="1.27" layer="21" rot="R180">12V IN</text>
 <text x="29.5656" y="13.7922" size="1.27" layer="21" rot="R90">5V OUT</text>
 <text x="27.0002" y="13.716" size="1.27" layer="21" rot="R90">GND</text>
 <hole x="20.2692" y="12.5222" drill="2.8"/>
 <hole x="12.6492" y="12.5222" drill="2.8"/>
-<text x="101.6" y="18.2118" size="1.27" layer="21" rot="R90">GND</text>
+<text x="103.124" y="18.4658" size="1.27" layer="21" rot="R180">GND</text>
 <text x="24.384" y="62.992" size="1.778" layer="21" rot="R315">gnd</text>
 <text x="22.352" y="60.706" size="1.778" layer="21" rot="R315">scl</text>
 <text x="20.066" y="58.928" size="1.778" layer="21" rot="R315">sda</text>
@@ -184,8 +184,16 @@
 <text x="27.686" y="52.324" size="1.778" layer="21">1</text>
 <text x="27.686" y="54.864" size="1.778" layer="21">2</text>
 <text x="27.686" y="57.15" size="1.778" layer="21">3</text>
-<text x="102.616" y="25.146" size="1.016" layer="21">12V ON</text>
+<text x="102.489" y="21.0312" size="1.016" layer="21">12V ON</text>
 <text x="34.036" y="91.948" size="1.778" layer="22">Made by Jason King, James Scholl, and Ryan McBee</text>
+<text x="46.0248" y="80.5434" size="1.016" layer="22" rot="MR90">SDA PULLUP</text>
+<text x="52.4764" y="78.232" size="1.016" layer="22" rot="MR0">SCL PULLUP</text>
+<text x="58.5978" y="21.7424" size="1.778" layer="22" rot="MR0">BT LED</text>
+<text x="72.1868" y="27.559" size="1.778" layer="22" rot="MR0">CAM LED</text>
+<text x="83.3628" y="32.004" size="1.778" layer="22" rot="MR0">LASER</text>
+<text x="111.0234" y="38.2524" size="1.27" layer="21" rot="R90">PIEZO</text>
+<text x="8.8646" y="61.8998" size="1.27" layer="21">SDA</text>
+<text x="4.4704" y="64.135" size="1.27" layer="21">SCL</text>
 </plain>
 <libraries>
 <library name="MicrocontrollerComponents">
@@ -2277,48 +2285,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="con-lstb">
-<description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
-Naming:&lt;p&gt;
-MA = male&lt;p&gt;
-# contacts - # rows&lt;p&gt;
-W = angled&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="MA03-1">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.81" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="-3.81" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2589,11 +2555,9 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="VALUE" x="21.563759375" y="67.6590875" size="1.27" layer="27" rot="R225"/>
 </element>
 <element name="R8" library="SparkFun-Passives" package="0603-RES" value="" x="45.9994" y="77.4954" smashed="yes" rot="MR180">
-<attribute name="NAME" x="45.1104" y="76.7334" size="0.4064" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="44.9834" y="78.6384" size="0.4064" layer="28" font="vector" rot="MR180"/>
 </element>
 <element name="R11" library="SparkFun-Passives" package="0603-RES" value="" x="46.2788" y="79.9846" smashed="yes" rot="MR180">
-<attribute name="NAME" x="45.3898" y="79.2226" size="0.4064" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="45.2628" y="81.1276" size="0.4064" layer="28" font="vector" rot="MR180"/>
 </element>
 <element name="J2" library="SparkFun-Connectors" package="1X05" value="" x="20.1168" y="48.2092" smashed="yes">
@@ -2622,22 +2586,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="R14" library="resistor" package="R0603" value="330" x="34.29" y="58.166" smashed="yes">
 <attribute name="NAME" x="37.211" y="57.531" size="0.6096" layer="25" rot="R90"/>
 </element>
-<element name="SV1" library="con-lstb" package="MA03-1" value="" x="112.776" y="21.59" smashed="yes" rot="R270">
-<attribute name="OC_NEWARK" value="unknown" x="112.776" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="112.776" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="112.776" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="112.776" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="109.855" y="25.4" size="1.27" layer="27" ratio="10" rot="R270"/>
-</element>
-<element name="SV2" library="con-lstb" package="MA03-1" value="" x="98.044" y="21.59" smashed="yes" rot="R270">
-<attribute name="OC_NEWARK" value="unknown" x="98.044" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="98.044" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="98.044" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="98.044" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="95.123" y="25.4" size="1.27" layer="27" ratio="10" rot="R270"/>
-</element>
 <element name="V+_ESC5" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="110.363" y="13.97" smashed="yes" rot="R90"/>
-<element name="V+_ESC1" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="101.2698" y="14.1732" smashed="yes"/>
+<element name="V+_ESC1" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="101.2698" y="13.9954" smashed="yes"/>
 </elements>
 <signals>
 <signal name="N$11">
@@ -2709,39 +2659,36 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$5" pad="GND"/>
 <via x="18.288" y="57.658" extent="1-16" drill="0.5"/>
 <via x="15.24" y="16.51" extent="1-16" drill="0.5"/>
-<via x="36.83" y="16.51" extent="1-16" drill="0.5"/>
-<via x="48.26" y="16.51" extent="1-16" drill="0.5"/>
-<via x="60.96" y="16.51" extent="1-16" drill="0.5"/>
-<via x="73.66" y="16.51" extent="1-16" drill="0.5"/>
-<via x="86.36" y="16.51" extent="1-16" drill="0.5"/>
+<via x="34.417" y="20.828" extent="1-16" drill="0.5"/>
+<via x="47.9044" y="14.6812" extent="1-16" drill="0.5"/>
+<via x="60.706" y="14.5542" extent="1-16" drill="0.5"/>
+<via x="73.66" y="14.5542" extent="1-16" drill="0.5"/>
+<via x="86.614" y="14.4272" extent="1-16" drill="0.5"/>
 <via x="13.97" y="41.148" extent="1-16" drill="0.5"/>
 <via x="14.9606" y="26.7462" extent="1-16" drill="0.5"/>
 <via x="111.76" y="45.72" extent="1-16" drill="0.5"/>
-<via x="53.34" y="54.61" extent="1-16" drill="0.5"/>
-<via x="97.79" y="80.01" extent="1-16" drill="0.5"/>
-<via x="81.28" y="80.01" extent="1-16" drill="0.5"/>
+<via x="48.4886" y="52.197" extent="1-16" drill="0.5"/>
+<via x="100.5586" y="79.248" extent="1-16" drill="0.5"/>
+<via x="81.661" y="83.9216" extent="1-16" drill="0.5"/>
 <via x="81.28" y="95.25" extent="1-16" drill="0.5"/>
 <via x="64.77" y="95.25" extent="1-16" drill="0.5"/>
 <via x="49.7078" y="95.2246" extent="1-16" drill="0.6" diameter="0.3048"/>
 <via x="53.34" y="67.31" extent="1-16" drill="0.5"/>
-<via x="68.58" y="54.61" extent="1-16" drill="0.5"/>
-<via x="73.152" y="70.358" extent="1-16" drill="0.5"/>
-<via x="75.692" y="72.644" extent="1-16" drill="0.5"/>
-<via x="78.232" y="70.358" extent="1-16" drill="0.5"/>
-<via x="81.28" y="70.358" extent="1-16" drill="0.5"/>
-<via x="83.566" y="72.644" extent="1-16" drill="0.5"/>
-<via x="85.852" y="70.358" extent="1-16" drill="0.5"/>
-<via x="88.646" y="70.358" extent="1-16" drill="0.5"/>
-<via x="90.932" y="72.644" extent="1-16" drill="0.5"/>
-<via x="93.218" y="70.104" extent="1-16" drill="0.5"/>
-<via x="108.712" y="68.072" extent="1-16" drill="0.5"/>
+<via x="59.9694" y="51.7906" extent="1-16" drill="0.5"/>
+<via x="72.771" y="70.2818" extent="1-16" drill="0.5"/>
+<via x="75.7428" y="73.7108" extent="1-16" drill="0.5"/>
+<via x="79.5528" y="70.358" extent="1-16" drill="0.5"/>
+<via x="83.4136" y="73.66" extent="1-16" drill="0.5"/>
+<via x="87.0712" y="70.358" extent="1-16" drill="0.5"/>
+<via x="90.8304" y="73.7616" extent="1-16" drill="0.5"/>
+<via x="96.4184" y="70.104" extent="1-16" drill="0.5"/>
+<via x="104.1146" y="70.5866" extent="1-16" drill="0.5"/>
 <via x="108.712" y="63.754" extent="1-16" drill="0.5"/>
 <via x="114.554" y="63.754" extent="1-16" drill="0.5"/>
 <via x="120.65" y="63.754" extent="1-16" drill="0.5"/>
 <via x="123.19" y="60.96" extent="1-16" drill="0.5"/>
 <via x="120.904" y="58.42" extent="1-16" drill="0.5"/>
-<via x="117.094" y="67.056" extent="1-16" drill="0.5"/>
-<via x="112.014" y="67.056" extent="1-16" drill="0.5"/>
+<via x="113.9444" y="70.5104" extent="1-16" drill="0.5"/>
 <contactref element="LED1" pad="C"/>
 <contactref element="LED2" pad="C"/>
 <contactref element="LED3" pad="C"/>
@@ -2762,21 +2709,37 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="C7" pad="2"/>
 <contactref element="C8" pad="1"/>
 <via x="37.8714" y="81.4324" extent="1-16" drill="0.5"/>
-<via x="48.1584" y="84.1502" extent="1-16" drill="0.5"/>
-<via x="46.355" y="82.1436" extent="1-16" drill="0.5"/>
+<via x="47.5234" y="83.1088" extent="1-16" drill="0.5"/>
 <via x="33.4518" y="78.7654" extent="1-16" drill="0.5"/>
 <contactref element="LED6" pad="C"/>
 <contactref element="LED7" pad="C"/>
 <contactref element="LED8" pad="C"/>
-<contactref element="SV2" pad="1"/>
-<contactref element="SV2" pad="2"/>
-<contactref element="SV2" pad="3"/>
 <contactref element="V+_ESC1" pad="P$1"/>
 <via x="33.8836" y="61.2648" extent="1-16" drill="0.5"/>
 <via x="28.2956" y="51.1048" extent="1-16" drill="0.5"/>
 <via x="34.8996" y="48.3108" extent="1-16" drill="0.5"/>
-<via x="33.6804" y="75.4634" extent="1-16" drill="0.5"/>
+<via x="30.6324" y="72.2884" extent="1-16" drill="0.5"/>
 <via x="36.4998" y="72.517" extent="1-16" drill="0.5"/>
+<via x="92.6338" y="49.0474" extent="1-16" drill="0.5"/>
+<via x="92.6084" y="52.3748" extent="1-16" drill="0.5"/>
+<via x="92.6846" y="45.9232" extent="1-16" drill="0.5"/>
+<via x="92.6846" y="42.6466" extent="1-16" drill="0.5"/>
+<via x="23.0632" y="76.0476" extent="1-16" drill="0.6" diameter="0.3048"/>
+<via x="47.5234" y="21.082" extent="1-16" drill="0.5"/>
+<via x="60.6298" y="20.8534" extent="1-16" drill="0.5"/>
+<via x="73.4568" y="21.082" extent="1-16" drill="0.5"/>
+<via x="86.7918" y="21.2852" extent="1-16" drill="0.5"/>
+<via x="33.9598" y="14.5542" extent="1-16" drill="0.5"/>
+<via x="34.1122" y="27.178" extent="1-16" drill="0.5"/>
+<via x="24.2824" y="26.1366" extent="1-16" drill="0.5"/>
+<via x="71.3232" y="52.1462" extent="1-16" drill="0.5"/>
+<via x="48.4124" y="60.706" extent="1-16" drill="0.5"/>
+<via x="59.8932" y="60.7822" extent="1-16" drill="0.5"/>
+<via x="70.9422" y="60.8838" extent="1-16" drill="0.5"/>
+<via x="48.5394" y="45.3644" extent="1-16" drill="0.5"/>
+<via x="59.944" y="45.3644" extent="1-16" drill="0.5"/>
+<via x="63.9826" y="86.233" extent="1-16" drill="0.5"/>
+<via x="64.4906" y="76.3778" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="+12V">
 <contactref element="U$4" pad="67"/>
@@ -2839,21 +2802,17 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="113.2586" y1="41.783" x2="113.2586" y2="43.5122" width="0.254" layer="1"/>
 <wire x1="113.2586" y1="43.5122" x2="113.2732" y2="43.5268" width="0.254" layer="1"/>
 <wire x1="110.0328" y1="41.021" x2="112.776" y2="41.021" width="1.6764" layer="1"/>
-<contactref element="SV1" pad="3"/>
-<contactref element="SV1" pad="2"/>
-<contactref element="SV1" pad="1"/>
 <wire x1="111.4044" y1="34.5948" x2="111.491121875" y2="34.558878125" width="1.6764" layer="1" curve="-45.001032"/>
 <wire x1="111.491121875" y1="34.558878125" x2="112.776" y2="33.274" width="1.6764" layer="1"/>
-<wire x1="112.776" y1="33.274" x2="112.776" y2="24.13" width="1.6764" layer="1"/>
-<wire x1="112.776" y1="24.13" x2="112.776" y2="21.59" width="1.6764" layer="1"/>
-<wire x1="112.776" y1="21.59" x2="112.776" y2="19.05" width="1.6764" layer="1"/>
 <wire x1="107.9872" y1="24.2316" x2="112.569190625" y2="24.2316" width="0.6096" layer="1"/>
 <wire x1="112.569190625" y1="24.2316" x2="112.74879375" y2="24.15720625" width="0.6096" layer="1" curve="-44.999502"/>
-<wire x1="112.74879375" y1="24.15720625" x2="112.776" y2="24.13" width="0.6096" layer="1"/>
 <contactref element="V+_ESC5" pad="P$1"/>
-<wire x1="112.776" y1="19.05" x2="112.776" y2="16.488209375" width="1.6764" layer="1"/>
 <wire x1="112.776" y1="16.488209375" x2="112.70160625" y2="16.30860625" width="1.6764" layer="1" curve="-44.999502"/>
 <wire x1="112.70160625" y1="16.30860625" x2="110.363" y2="13.97" width="1.6764" layer="1"/>
+<wire x1="112.776" y1="33.274" x2="112.74879375" y2="33.274" width="1.4224" layer="1"/>
+<wire x1="112.74879375" y1="33.274" x2="112.74879375" y2="24.15720625" width="1.4224" layer="1"/>
+<wire x1="112.74879375" y1="24.15720625" x2="112.776" y2="24.15720625" width="1.4224" layer="1"/>
+<wire x1="112.776" y1="24.15720625" x2="112.776" y2="16.488209375" width="1.4224" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="PCB1" pad="P$2"/>
@@ -3060,8 +3019,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="13.7681" y1="59.428" x2="13.0382" y2="59.428" width="0.254" layer="16"/>
 <wire x1="13.0382" y1="59.428" x2="9.9822" y2="62.484" width="0.4064" layer="16"/>
 <wire x1="7.366" y1="62.484" x2="7.366" y2="63.2206" width="0.4064" layer="16"/>
-<wire x1="7.366" y1="63.2206" x2="8.5852" y2="64.5414" width="0.4064" layer="16" curve="-90"/>
-<wire x1="8.5852" y1="64.5414" x2="9.9822" y2="63.0936" width="0.4064" layer="16" curve="-90"/>
+<wire x1="7.366" y1="63.2206" x2="8.5344" y2="64.4652" width="0.4064" layer="16" curve="-90"/>
+<wire x1="8.5344" y1="64.4652" x2="9.9822" y2="63.0936" width="0.4064" layer="16" curve="-90"/>
 <wire x1="9.9822" y1="63.0936" x2="9.9822" y2="62.484" width="0.4064" layer="16"/>
 <wire x1="33.0708" y1="77.4954" x2="41.5546" y2="77.47" width="0.4064" layer="16"/>
 <wire x1="41.5546" y1="77.47" x2="42.718" y2="78.735" width="0.4064" layer="16"/>
@@ -3343,8 +3302,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <polygon width="0.4064" layer="16" thermals="no" rank="5">
 <vertex x="109.22" y="50.546"/>
 <vertex x="109.22" y="53.086"/>
-<vertex x="104.902" y="53.086"/>
-<vertex x="104.902" y="61.468"/>
+<vertex x="106.68" y="53.0606"/>
+<vertex x="106.6546" y="61.5442"/>
 <vertex x="118.618" y="61.468"/>
 <vertex x="118.618" y="50.546"/>
 </polygon>
