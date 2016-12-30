@@ -183,7 +183,6 @@
 <text x="27.686" y="54.864" size="1.778" layer="21">2</text>
 <text x="27.686" y="57.15" size="1.778" layer="21">3</text>
 <text x="102.489" y="21.0312" size="1.016" layer="21">12V ON</text>
-<text x="34.036" y="91.948" size="1.778" layer="22">Made by Jason King, James Scholl, and Ryan McBee</text>
 <text x="46.0248" y="80.5434" size="1.016" layer="22" rot="MR90">SDA PULLUP</text>
 <text x="52.4764" y="78.232" size="1.016" layer="22" rot="MR0">SCL PULLUP</text>
 <text x="58.5978" y="21.7424" size="1.778" layer="22" rot="MR0">BT LED</text>
@@ -813,6 +812,11 @@
 <rectangle x1="86.487" y1="66.421" x2="88.519" y2="66.675" layer="21"/>
 <text x="-0.508" y="-7.874" size="0.508" layer="21" font="vector">/home/ryan/Downloads/snorlax.bmp</text>
 <hole x="13.2842" y="12.5222" drill="2.8"/>
+<text x="11.7094" y="15.6718" size="1.778" layer="21">Made by:
+Jason King,
+James Scholl,
+Ryan McBee, and
+Luke McBee</text>
 </plain>
 <libraries>
 <library name="MicrocontrollerComponents">
@@ -3284,14 +3288,14 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="C12" pad="-"/>
 <contactref element="U$5" pad="GND"/>
 <via x="18.288" y="57.658" extent="1-16" drill="0.5"/>
-<via x="15.24" y="16.51" extent="1-16" drill="0.5"/>
+<via x="16.002" y="14.5796" extent="1-16" drill="0.5"/>
 <via x="34.417" y="20.828" extent="1-16" drill="0.5"/>
 <via x="47.9044" y="14.6812" extent="1-16" drill="0.5"/>
 <via x="60.706" y="14.5542" extent="1-16" drill="0.5"/>
 <via x="73.66" y="14.5542" extent="1-16" drill="0.5"/>
 <via x="86.614" y="14.4272" extent="1-16" drill="0.5"/>
 <via x="13.97" y="41.148" extent="1-16" drill="0.5"/>
-<via x="14.9606" y="26.7462" extent="1-16" drill="0.5"/>
+<via x="13.5128" y="29.845" extent="1-16" drill="0.5"/>
 <via x="111.76" y="45.72" extent="1-16" drill="0.5"/>
 <via x="49.6316" y="52.2478" extent="1-16" drill="0.5"/>
 <via x="100.4824" y="79.6036" extent="1-16" drill="0.5"/>
@@ -3355,7 +3359,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="86.7918" y="21.2852" extent="1-16" drill="0.5"/>
 <via x="33.9598" y="14.5542" extent="1-16" drill="0.5"/>
 <via x="34.1122" y="27.178" extent="1-16" drill="0.5"/>
-<via x="24.2824" y="26.1366" extent="1-16" drill="0.5"/>
+<via x="24.8158" y="21.6916" extent="1-16" drill="0.7"/>
 <via x="49.7586" y="58.5978" extent="1-16" drill="0.5"/>
 <via x="58.2676" y="58.547" extent="1-16" drill="0.5"/>
 <via x="62.7126" y="63.9318" extent="1-16" drill="0.5"/>
@@ -4162,4 +4166,10 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
